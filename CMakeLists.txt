@@ -8,7 +8,7 @@ execute_process (
   OUTPUT_VARIABLE UNAME_S
 )
 
-if(UNAME_S EQUAL "Darwin")
+if(${UNAME_S} EQUAL "Darwin")
   set(OBJS objs-mac)
 else()
   set(OBJS objs)
